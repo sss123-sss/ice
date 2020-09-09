@@ -49,7 +49,7 @@ MProtein = 50000;
 MFat = 50000;
 MSugar = 342; % sucrose
 MFiber = 50000; 
-% According to $\lambda/R_g[1/T_{A0} - 1/T_A] = \ln X_A$ (Heldman, 2008, Handbook)
+% According to $\M_w*lambda/R_g[1/T_{A0} - 1/T_A] = \ln X_A$ (Pham 2015)
 % Where T_{A0} is the original freezing point of water, 273 K
 X_A = (water/MWater)*(water/MWater + protein/MProtein + fat/MFat + ...
     + sugar/MSugar + fiber/MFiber + ash/MAsh)^(-1);
